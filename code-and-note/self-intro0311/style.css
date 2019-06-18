@@ -1,0 +1,184 @@
+*{margin: 0;padding: 0;}
+ul,li{list-style: none}
+img{vertical-align: top;border: none}
+legend{display: none}
+fieldset{border: none}
+a{text-decoration: none}
+a:hover,a:active{text-decoration: none}
+.clear{clear:both;}
+
+#nav{
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 90px;
+}
+.logo{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.logoname{
+    font-family: STHeitiTC-Medium;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    position: absolute;
+    top: 35px;
+    left: 170px;
+}
+.logoname a{color: white;}
+.logoname a:hover{
+    color:#FBD500;
+}
+.sector{
+    position: absolute; 
+    top: 48px;
+    left:800px; 
+    height: 15px; 
+    font-family: STHeitiTC-Medium;
+    font-size: 15px;
+    color: #FBD500;
+    letter-spacing: 1.5px;
+}
+.sector li{
+    float:left;
+    padding-right: 62px;
+}
+.sector a{color: white;}
+.sector a:hover{
+    color:#FBD500;
+}
+
+.content{
+    background: rgba(232,219,219,0.60);
+    height: cover;
+    width: 80%;
+    position: absolute;
+    top: 200px;
+    left: 140px;
+    z-index: 1;
+}
+.top{
+    font-family: SnellRoundhand;
+    font-size: 35px;
+    color: #FFFFFF;
+    letter-spacing: 2.5px;
+    text-align: center;
+    padding: auto 20px;
+}
+.first h1{
+    font-family: PingFangSC-Semibold;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    margin-top: 70px;
+    margin-left: 60px;
+    margin-right: 0;
+    float: left;
+}
+.first h2{
+    font-family: PingFangSC-Semibold;
+    font-size: 35px;
+    letter-spacing: 2.5px;
+    margin-top: 80px;
+    margin-left: 10px;
+    float: left;
+}
+.content img{
+    height: 200px;
+    width: 200px;
+    left: 20px;
+}
+.img{
+    width: 850px;
+    height: 250px; 
+    position: relative; 
+    margin-top: 40px;
+    margin-left: 40px;
+    overflow: hidden;
+    float: left;
+}
+.img-nav{
+    position: relative;
+    left: 0; 
+    top: 0; 
+    margin: 0; 
+    padding: 0;    
+    -webkit-animation: 20s move infinite linear; 
+    width: 200%; 
+}
+.img li{
+    list-style: none; 
+    width: 200px; 
+    height: 200px; 
+    border: 5px solid #fff; 
+    float: left;
+}
+@-webkit-keyframes move{
+    0% {left: 0;
+    }
+    100% {left: -500px;
+    }
+}
+@keyframes move {
+    0% {left: 0;
+    }
+    100% {left: -500px;
+    }
+}
+.img:hover img-nav {
+    -webkit-animation-play-state: paused; /*动画暂停播放*/
+}
+.sentence{
+    width: 100%;
+    float: left;
+    box-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px auto;
+    background: rgba(251,213,0,0.60);
+}
+.basic{
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    width: 90%;
+}
+.ul1{
+    float: left;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.ul2{
+    float: left;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+.ul3{
+    float: left;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+.sum{
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    width: 90%;
+}
+.achieve{
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    width: 90%;
+}
+.bottom{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    z-index: 1;
+}

@@ -1,0 +1,39 @@
+.img{
+    width: 500px;
+    height: 100px; 
+    border: 1px solid #000; 
+    position: relative; 
+    margin: 100px auto; 
+    overflow: hidden;
+}
+.img-nav{
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    margin: 0; 
+    padding: 0;    
+    -webkit-animation: 6s move infinite linear; 
+    width: 200%; 
+}
+.img li{
+    list-style: none; 
+    width: 200px; 
+    height: 200px; 
+    border: 1px solid #fff; 
+    float: left;
+}
+@-webkit-keyframes move{
+    0% {left: 0;
+    }
+    100% {left: -500px;
+    }
+}
+@keyframes move {
+    0% {left: 0;
+    }
+    100% {left: -500px;
+    }
+}
+.img:hover img-nav {
+    -webkit-animation-play-state: paused; /*动画暂停播放*/
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <style type="text/css">
+        #Bottom {
+            line-height:20px;
+            bottom:0;
+            background: rgb(178, 196, 247);
+            border-top: 1px solid rgb(8, 8, 7);
+            bottom: 0;
+            color: rgb(18, 20, 22);
+            font-size: 11px;
+            text-align: center;
+            position: fixed;
+            width:100%;
+        }
+    </style>
+    <body class="loginWeb" style="text-align: center">
+            <div class="loginBox">
+                <div class="innerBox">
+                    <div class="logo"> <img src="/Public/images/logo.png" /></div>
+                    <form style="text-align: match-parent">
+                        <div class="loginInfo" style="margin-left: 15px">
+                            <ul>
+                                <li class="row1">用户名：</li>
+                                <li class="row2"><input class="input" name="user[username]" id="username" size="30" type="text" placeholder="默认为学号或职工号" title="默认为学号或职工号" /></li>
+                            </ul>
+                            <ul>
+                                <li class="row1">密码：</li>
+                                <li class="row2"><input class="input" name="user[password]" id="pwd" size="30" type="password" placeholder="默认为八位生日数字" title="默认为八位生日数字" /></li>
+                            </ul>
+                            <ul>
+                                <li class="row1">验证码：</li>
+                                <li class="row2"><input class="input" id="verify_code" size="10" name="verify_code" type="text" onkeydown="javascript:KeyDown(event, 'commitButton')" />
+                                <img src="/index.php/Public/verifyCode.html" id="codeImg"  title="看不清？单击此处刷新" onclick="this.src+='?rand='+Math.random();"  style="cursor: pointer; vertical-align: middle;"/></li>
+                            </ul>
+                        </div>
+        <div id="Bottom">
+            © 2014 - 2019 北京大学软件与微电子学院 - 综合信息服务平台 All rights reserved - 技术支持邮箱: icampus@ss.pku.edu.cn
+        </div>
+    </body>
+</html>
